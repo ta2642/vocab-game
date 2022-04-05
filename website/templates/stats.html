@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+    <div class = "game">
+    <div class = "counter">
+        <div class = "current">
+            {{ current }}/10
+        </div>
+         <div class = "correct">
+            {{ correct }}
+        </div>
+    </div>
+        good job!
+
+    <br/>
+        <form action = "" method = "post" >
+        <input type="submit" name="action" value="play again">
+    </form>
+
+          <!--<-button type="next">next</-button>-->
+</div>
+
+{% endblock %}

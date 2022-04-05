@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+    <span>
+    <div class = "start">
+     <a href="{{ url_for('views.start_game')}}"style="text-decoration: none">
+         play game! </a>
+    </div>
+    </span>
+
+
+        {% block output %}
+    {% endblock %}
+
+
+
+
+{% endblock %}

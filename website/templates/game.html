@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+<div class = "game">
+    <div class = "counter">
+        <div class = "current">
+            {{ current }}/10
+        </div>
+         <div class = "correct">
+            {{ correct }}
+        </div>
+    </div>
+
+    <div class = "serve">
+        {{ word_to_serve }}
+    </div>
+    <br/>
+    <form action = "" method = "post" >
+
+        <p> <input type='text'
+            placeholder = "type here.."
+            name = "user_input">
+        </p>
+        <input type="submit" name="action" value="next">
+        <input type="submit" name="action" value="prev">
+        <input type="submit" name="action" value="end">
+        <input type="submit" name="action" value="play again">
+    </form>
+          <!--<-button type="next">next</-button>-->
+</div>
+
+    {% block output %}
+{% endblock %}
+
+
+
+
+{% endblock %}
