@@ -4,6 +4,9 @@ h1 {
     text-align: center; /*left,right,center,justify*/
     line-height: 400%;
 }
+h3 {
+    text-align: center;
+}
 fieldset {
     border:none;
 
@@ -13,116 +16,100 @@ fieldset {
     padding-top: 10%;
     display: block;
 }
+
 .start {
-    position: relative;
-    display: inline-block;
-    border: 1px solid #000;
     background-color: #04AA6D;
-    width: 12.5vw;
     text-align: center;
-    margin-bottom: 10px;
-    margin-left: 40%;
-    margin-right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 50px;
+    border-radius: 30px;
+    color: white;
+
+}
+.start, a {
+    color: white;
+}
+.start, a:hover {
+  color: white;
+}
+.start:hover {
+    background-color: #65d7ad;
+}
+.center-text {
+    text-align: center;
+    color: white;
 }
 
 .game {
     display: block;
-    border: #1e2bd2;
-    background-color: #339BEB;
+     background-color: #6ab6f1;
+
+    border-radius: 20px;
     padding: 5%;
 }
 .counter {
     width: 80%;
     margin: auto;
     padding: 10px;
-
 }
 .current {
     display: inline-block;
-    border: 1px solid #000;
     border-radius: 20px;
-    background-color: #04AA6D;
+    background-color: #339BEB;
     width: 10vw;
     text-align: center;
     float: left;
+    color: white;
 }
 .correct {
     display: inline-block;
-    border: 1px solid #000;
     border-radius: 20px;
-    background-color: #04AA6D;
+    background-color: #339BEB;
     width: 10vw;
     text-align: center;
     margin-left: 60%;
+    color: white;
 }
-
 
 .serve {
     text-align: center;
     color: darkgreen;
     font-family: Arial;
-    font-size: 20%;
-    font-size: 100%;
     background-color: #b2e6cc;
-    width: 100%;
-    height:40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .serve:hover {
-    width: 110%;
-    height: 50%;
-    border-radius: 8px;
-}
-form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color:#1e2bd2;
-    font-family: Arial;
-    font-style: italic;
-    font-size: 100%;
-    width: 100%;
-    height:20%;
-}
-
-input[type = text] {
-    width: 70%;
-    height: 5%;
-    padding: 1%;
-    border: 2px solid rgb(132, 132, 201) ;
-    background-image: url('searchicon.png');
-    border-radius: 4px;
-}
-input[type = text]:hover {
-    width: 80%;
-    height: 8%;
+    animation: slide-in 0.5s forwards;
     border-radius: 8px;
 }
 
-input[type = text]:focus {
-    width: 80%;
-    height: 8%;
-    border-radius: 8px;
+.game-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-input[type=submit] {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+
+.action-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-input[type=submit]:hover{
-  background-color: #024d31;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+.form-container {
+    margin-left: 10%;
+    margin-right: 10%;
 }
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .result {
     margin-top: 2%;
     margin-bottom: 2%;

@@ -5,9 +5,11 @@
 <div class = "game">
     <div class = "counter">
         <div class = "current">
+            current <br/>
             {{ current }}/10
         </div>
          <div class = "correct">
+             score <br/>
             {{ correct }}
         </div>
     </div>
@@ -18,14 +20,25 @@
     <br/>
     <form action = "" method = "post" >
 
-        <p> <input type='text'
+        <div class = "game-input"> <input type='text'
             placeholder = "type here.."
             name = "user_input">
-        </p>
-        <input type="submit" name="action" value="next">
-        <input type="submit" name="action" value="prev">
-        <input type="submit" name="action" value="end">
-        <input type="submit" name="action" value="play again">
+        </div>
+
+        <div class = "action-row">
+        <div class = "submit-btn"> <button class= "btn btn-primary"
+                        type = "submit"name="action" value="prev">prev</button>
+         </div>
+        <div class = "submit-btn">
+                <button class= "btn btn-primary"
+                        type = "submit"name="action" value="next">next</button>
+         </div>
+        </div>
+        <div class = "submit-btn">
+                <button class= "btn btn-primary"
+                        type = "submit"name="action" value="end">end</button>
+         </div>
+
     </form>
           <!--<-button type="next">next</-button>-->
 </div>
